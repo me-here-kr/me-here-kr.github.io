@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8" />
+    <title>Box Content Preview Demo</title>
+
+    <!-- polyfill.io only loads a Promise polyfill if your browser needs one -->
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=Promise"></script>
+
+    <!-- Latest version of Preview SDK for your locale -->
+    <script src="https://cdn01.boxcdn.net/platform/preview/2.106.0/en-US/preview.js"></script>
+    <link
+            rel="stylesheet"
+            href="https://cdn01.boxcdn.net/platform/preview/2.106.0/en-US/preview.css"
+    />
+</head>
+<body>
+<div class="preview-container" style="height:400px;width:575px"></div>
+<script>
+    var preview = new Box.Preview();
+    preview.show('93392244621', 'EqFyi1Yq1tD9mxY8F38sxDfp73pFd7FP', {
+        container: '.preview-container',
+    });
+</script>
+</body>
+</html>
