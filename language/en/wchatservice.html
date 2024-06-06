@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>meHere(나~여기, 나여기)</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- 언어 설정 메뉴 작동 코드 -->
+    <script>
+        /* 초기 언어는 한국어(ko)로 설정하고, 변경되면 맞춰서 업데이트 하는 리스너 구현 */
+        updateLanguage("ko");
+        /*
+                window.addEventListener("load", function() {
+                    document.getElementById("languageSelector").value = "ko";
+                    updateLanguage("ko");
+
+                    document.getElementById("languageSelector").addEventListener("change", function() {
+                        const selectedLang = this.value;
+                        updateLanguage(selectedLang);
+                    });
+                });*/
+
+        function updateLanguage(lang) {
+            //var lang = id[id.selectedIndex].id;
+            console.log(lang);
+            if (lang === 'en') {
+                window.location.href = "https://me-here-kr.github.io/language/en/wchatservice.html";
+            } else if (lang === 'ko') {
+                window.location.href = "https://me-here-kr.github.io/wchatservice.html";
+            }
+        }
+    </script>
+
+</head>
+
+
+<body>
+
+<!-- Navigation -->
+
+<!-- Page Header -->
+<!-- Set your background image for this header on the line below. -->
+<header class="intro-header" style="background-image: url('img/mysite.jpeg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="site-heading">
+                    <h1>chatService - meHere(나~여기)</h1>
+                    <hr class="small">
+                    <span class="subheading">Minimum measures to safely share location information when necessary to provide peace of mind from future risks
+                        </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <!--                        <label for="languageSelector" style="position: absolute; top: 10px; right: 180px;">Language:</label>-->
+            <!--                        <select id="languageSelector" style="position: absolute; top: 10px; right: 80px;" onchange="alert(this.value)">
+                                        <option value="en">English</option>
+                                        <option value="ko" selected>한국어</option>
+                                    </select>-->
+
+            <select id="selectedBox" onchange="updateLanguage(this.value)">
+
+                <option value="ko">한국어</option>
+                <option value="en">English</option>
+            </select>
+
+        </div>
+
+        <div class="col-lg-12 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-preview">
+                <a href="#">
+                    <h2 class="post-title">
+                        1. My Vision
+                    </h2>
+                </a>
+                <div class = "col-md-12" style="text-align: left">
+                    <p class="post-subtitle">
+                        (iPhone) What are the main features of meHere?<br/>
+                        Posted by wChatHere on April 1, 2024
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-lg-12 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-preview">
+
+                <a href="iphone/qa.html">
+                    <p class="post-title">
+                        2. AppStore
+                    </p>
+                </a>
+
+                <div class = "col-md-3">
+                    <img class="img-responsive" src="./img/meHere.png"  alt="">
+                </div>
+                <div class = "col-md-6" style="text-align: left">
+                    <p class="post-subtitle">
+                        <b>오픈 준비중(Preparing to open)</b><br/>
+                        Posted by wChatHere on April 1, 2024
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-12 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-preview">
+                <br/>
+                <div class = "col-md-3">
+                    <img class="img-responsive" src="./img/sfiles.png"  alt="">
+                    <a href="https://sfilesapp.github.io/" target="_blank">
+                        앱 페이지 열기(Open page)
+                    </a>
+                </div>
+                <div class = "col-md-6" style="text-align: left">
+                    <p class="post-subtitle">
+                        file manager privacy는 개인 정보 파일 관리 툴입니다.<br/>
+                        아이폰의 제공하는 보안기능과 별도로 파일애 Lock를 설정하여 자신의 아이폰에 접근하여 화면을 볼 수 있는 사람을 대상으로 하는 보안기능입니다.
+                    </p>
+                    <p>
+                        <a href="https://apps.apple.com/kr/app/file-manager-privacy/id6472812987" target="_blank">
+                            <img class="img-responsive" src="./img/iOS.png"  alt="">
+                        </a>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<hr>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <!--
+                <ul class="list-inline text-center">
+                    <li>
+                        <a href="#">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                -->
+                <p class="copyright text-muted">Copyright &copy; chatService in wChatService 2024</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
